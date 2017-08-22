@@ -1,0 +1,7 @@
+[Release]
+Version=@@VERSION@@
+Type=Desktop
+Type[tr_TR]=Masaüstü
+
+[Addition]
+Milestone=@@RELEASE@@

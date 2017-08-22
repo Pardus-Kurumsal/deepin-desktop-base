@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+case "${1}" in
+	configure)
+	update-alternatives --install /etc/deepin-version \
+		deepin-version /usr/lib/deepin/desktop-version 50
+		;;
+
+	abort-upgrade|abort-remove|abort-deconfigure)
+
+		;;
+
+	*)
+		echo "postinst called with unknown argument \`${1}'" >&2
+		;;
+esac
+
+#DEBHELPER#
+
+exit 0
